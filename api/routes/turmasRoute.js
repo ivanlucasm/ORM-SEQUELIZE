@@ -8,5 +8,6 @@ router.get('/turmas/:id', turmaController.buscarPorId);
 router.post('/turmas', turmaController.criarTurma);
 router.put('/turmas/:id', turmaController.editarTurma);
 router.delete('/turmas/:id', turmaController.apagarTurma);
+router.post('/turmas/:id/restaura', turmaController.restauraTurma);
 
-module.exports = router
+module.exports = router;
